@@ -9,29 +9,45 @@
 <body>
     <header class="container">
         <div class="logo">
-            <a href="#"><img src="/assets/images/logo-alura.svg" alt="logo"></a>
+            <a href="#"><img src="./assets/images/logo-alura.svg" alt="logo"></a>
         </div>
     </header>
    <main>
-    <form class="container">
-        <div class="text-input">
-            <textarea placeholder="Digite seu texto" name="text" id="text"></textarea>
-        </div>
-        <div class="alert">
-            <div class="icon-alerta">
-                <img src="./assets/images/alert.svg" alt="alert">
+    <div class="main">
+        <section class="input container">
+            <div class="text-input">
+                <textarea placeholder="Digite seu texto" name="text" id="text"></textarea>
             </div>
-            <span>Apenas letras minúsculas e sem acento.</span>
-        </div>
-        <div class="buttons">
-                <button class="button-encrypt">Criptografar</button>
-                <button class="button-decrypt">Descriptografar</button>
-        </div>
-        <div class="text-output">
+            <div class="alert">
+                <div class="icon-alert">
+                    <img src="./assets/images/alert.svg" alt="alert">
+                </div>
+                <span>Apenas letras minúsculas e sem acento.</span>
+            </div>
+            <div class="buttons">
+                    <button class="button-encrypt">Criptografar</button>
+                    <button class="button-decrypt">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="output container">
+            <div class="type-a-text">
+                <div class="person">
+                    <img src="./assets/images/person.svg" alt="person">
+                </div>
                 <h2>Nenhuma mensagem encontrada</h2>
                 <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
-        </div>
-    </form>
+            </div>
+            <div class="text-output">
+                <div class="decrypted-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum doloremque iste sint quidem illum! Dolor voluptas, saepe delectus veniam sit illo ab maxime expedita dicta provident! Quasi numquam aliquam ut. 
+                </div>
+                <div class="copy">
+                    <button class="button-decrypt">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </div>
    </main> 
 </body>
 </html>
