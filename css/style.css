@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .container{
     padding-left: 1rem;
     padding-right: 1rem;
@@ -23,6 +29,7 @@ header a img{
 }
 
 .text-input textarea{
+    resize:none;
     width: 100%;
     height: 18.125rem;
     font-size: 2rem;
@@ -78,6 +85,7 @@ header a img{
     font-size: 16px;
 }
 
+
 .button-encrypt{
     background-color: #0A3871;
     color: #ffffff;
@@ -87,6 +95,14 @@ header a img{
     border: solid #0A3871 1px;
     background-color: #0a387100;
     color: #0A3871;
+}
+
+.buttons .button-encrypt:hover{
+    opacity: 90%;
+}
+
+.button-decrypt:hover{
+    background-color: #0a387117;
 }
 
 
@@ -139,6 +155,27 @@ header a img{
     margin-bottom: 14px;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0A3871;
+    color: rgb(230, 230, 230);
+    height: 80px;
+    font-size: 11px;
+}
+
+
+footer a{
+    display:inline;
+    color: rgb(230, 230, 230);
+}
+
+footer .create{
+    margin-bottom: 16px;
+}
+
 @media (min-width: 768px) {
     .container{
         padding-left: 2.5rem;
@@ -161,7 +198,8 @@ header a img{
     }
 }
 
-@media (min-width: 1040px) {
+@media (min-width: 1440px) {
+
     .container{
         padding-left: 5.25rem;
         padding-right: 5.25rem;
@@ -169,51 +207,36 @@ header a img{
 
     main .main{
         display: flex;
-        justify-content: space-between;
-        gap: 5rem;
+        height: 100vh;
+        gap:5rem;
     }
 
-    main .input{
+    .main .input{
+        display: flex;
+        flex-direction: column;
+        margin-left: 7.813rem;
         padding-right: 0;
         flex:2;
     }
 
-    main .output{
+    .text-input textarea{
+        height: 64vh;
+    }
+
+
+    .main .output{
         padding-left: 0;
         flex:1;
     }
 
-    header{
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
-        margin-bottom: 56px;
-    }
-
-    .text-input textarea{
-        height: 260px;
-    }
-
-    .buttons{
-        flex-direction: row;
-        align-items: center;
-        margin-bottom: 64px;
-    }
-
     .type-a-text{
+        justify-content: center;
         position: relative;
         top: -140px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 92vh;
-        border-radius: 1.5rem;
-        padding: 32px;
-        box-shadow: rgba(149, 157, 165, 0.315) 0px 8px 24px;
+        height: 92%;
     }
 
-    .person{ 
+    .person{
         display: block;
     }
 }
