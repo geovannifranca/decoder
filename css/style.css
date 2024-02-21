@@ -76,7 +76,7 @@ header a img{
 }
 
 .buttons .button-encrypt,
-.button-decrypt{
+.button-decrypt,.button-copy{
     width: 100%;
     height: 67px;
     border-radius: 24px;
@@ -91,7 +91,7 @@ header a img{
     color: #ffffff;
 }
 
-.button-decrypt{
+.button-decrypt, .button-copy{
     border: solid #0A3871 1px;
     background-color: #0a387100;
     color: #0A3871;
