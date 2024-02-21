@@ -21,8 +21,8 @@ body{
 .message{
     display: none;
     position: absolute;
-    left: 45vw;
-    top: 40px;
+    left: 24vw;
+    top: 60vh;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
@@ -199,6 +199,11 @@ footer .create{
         padding-left: 2.5rem;
         padding-right: 2.5rem;
     }
+    .message{
+        position: absolute;
+        left: 35vw;
+        top: 20vh;
+    }
 
     header{
         padding-top: 2rem;
@@ -221,6 +226,12 @@ footer .create{
     .container{
         padding-left: 5.25rem;
         padding-right: 5.25rem;
+    }
+
+    .message{
+        position: absolute;
+        left: 40vw;
+        top: 10vh;
     }
 
     main .main{

@@ -47,7 +47,7 @@ buttonCopy.addEventListener("click", () => {
     message.style.display = 'block';
     setInterval(function(){
         message.style.display = 'none'; 
-      }, 1500);
+      }, 2000);
    
 });
 
