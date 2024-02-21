@@ -4,7 +4,7 @@ const buttonCopy = document.querySelector('.button-copy');
 const typeAText = document.querySelector('.type-a-text');
 const textOutput = document.querySelector('.text-output');
 const decryptedText = document.querySelector('.decrypted-text');
-
+const message = document.querySelector('.message');
 
 
 function encrypt(text) {
@@ -41,10 +41,16 @@ btnDecrypt.addEventListener("click", ()=>{
 
 });
 
-buttonCopy.addEventListener("click", ()=>{
-    document.execCommand("decryptedText");
-
+buttonCopy.addEventListener("click", () => {
+    const textToCopy = decryptedText.innerText;
+    navigator.clipboard.writeText(textToCopy);
+    message.style.display = 'block';
+    setInterval(function(){
+        message.style.display = 'none'; 
+      }, 1500);
+   
 });
+
 
 console.log(encrypt(input));
 console.log(encrypt('gato'))

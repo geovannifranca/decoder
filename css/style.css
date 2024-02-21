@@ -7,6 +7,7 @@
 }
 
 body{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -15,6 +16,22 @@ body{
 .container{
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.message{
+    display: none;
+    position: absolute;
+    left: 45vw;
+    top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: rgba(40, 231, 113, 0.932);
+    color: rgb(0, 0, 0);
+
 }
 
 header{
@@ -76,7 +93,8 @@ header a img{
 }
 
 .buttons .button-encrypt,
-.button-decrypt,.button-copy{
+.button-decrypt, .button-copy{
+    cursor: pointer;
     width: 100%;
     height: 67px;
     border-radius: 24px;
@@ -101,7 +119,7 @@ header a img{
     opacity: 90%;
 }
 
-.button-decrypt:hover{
+.button-decrypt:hover,.button-copy:hover{
     background-color: #0a387117;
 }
 
