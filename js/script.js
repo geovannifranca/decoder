@@ -1,4 +1,5 @@
 const btnEncrypt = document.querySelector('.button-encrypt');
+const btnDecrypt = document.querySelector('.button-decrypt');
 const typeAText = document.querySelector('.type-a-text');
 const textOutput = document.querySelector('.text-output');
 const decryptedText = document.querySelector('.decrypted-text');
@@ -27,6 +28,15 @@ btnEncrypt.addEventListener("click", ()=>{
     typeAText.style.display = 'none';
     textOutput.style.display = 'flex';
     decryptedText.innerHTML = `${encrypt(input)}`;
+
+});
+
+btnDecrypt.addEventListener("click", ()=>{
+    const input = document.querySelector('textarea').value;
+    decrypt(input);
+    typeAText.style.display = 'none';
+    textOutput.style.display = 'flex';
+    decryptedText.innerHTML = `${decrypt(input)}`;
 
 });
 
