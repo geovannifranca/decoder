@@ -236,6 +236,16 @@ footer .create{
         height: 92%;
     }
 
+    .text-output{
+        justify-content: center;
+        position: relative;
+        top: -140px;
+    }
+
+    .text-output .decrypted-text{
+        height: 78vh;
+    }
+
     .person{
         display: block;
     }
