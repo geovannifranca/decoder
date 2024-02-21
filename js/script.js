@@ -25,19 +25,23 @@ function decrypt(text) {
 
 btnEncrypt.addEventListener("click", ()=>{
     const input = document.querySelector('textarea').value;
+    if(input !== ''){
     encrypt(input);
     typeAText.style.display = 'none';
     textOutput.style.display = 'flex';
     decryptedText.innerHTML = `${encrypt(input)}`;
+    }
 
 });
 
 btnDecrypt.addEventListener("click", ()=>{
     const input = document.querySelector('textarea').value;
-    decrypt(input);
-    typeAText.style.display = 'none';
-    textOutput.style.display = 'flex';
-    decryptedText.innerHTML = `${decrypt(input)}`;
+    if(input !== ''){
+        encrypt(input);
+        typeAText.style.display = 'none';
+        textOutput.style.display = 'flex';
+        decryptedText.innerHTML = `${encrypt(input)}`;
+        }
 
 });
 
@@ -51,7 +55,3 @@ buttonCopy.addEventListener("click", () => {
    
 });
 
-
-console.log(encrypt(input));
-console.log(encrypt('gato'))
-console.log(decrypt('gaitober'))
