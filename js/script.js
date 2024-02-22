@@ -37,11 +37,11 @@ btnEncrypt.addEventListener("click", ()=>{
 btnDecrypt.addEventListener("click", ()=>{
     const input = document.querySelector('textarea').value;
     if(input !== ''){
-        encrypt(input);
-        typeAText.style.display = 'none';
-        textOutput.style.display = 'flex';
-        decryptedText.innerHTML = `${encrypt(input)}`;
-        }
+        decrypt(input);
+    typeAText.style.display = 'none';
+    textOutput.style.display = 'flex';
+    decryptedText.innerHTML = `${decrypt(input)}`;
+    }
 
 });
 
